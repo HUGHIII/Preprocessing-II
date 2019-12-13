@@ -1,24 +1,59 @@
 .home {
 
+  .introP {
+    padding-top:2%;
+    padding-bottom:1%;
+    border-bottom:2px dashed grey;
+
+    @media @mobile {
+      padding:2% 8% 0 8%;
+      margin-left: 1%;
+    }
+
+  
+
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+         @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      
+      
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width:100%;
+        padding:0 8%;
+        margin-left: 1%;
+      }
+
+ 
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width:100%;
+        display: flex;
+        justify-content: center;
+      }
+
 
       img {
         border-radius: 10px;
+        
       }
     }
   }
@@ -27,9 +62,22 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        width:100%;
+        padding:0 8%;
+        margin-left: 1%;
+      }
+
+  
+      
     }
 
     .img-content {
@@ -53,9 +101,57 @@
     display: flex;
     justify-content: space-between;
 
+  @media @mobile {
+        
+        flex-direction: column;
+        
+      }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+        margin:5% 0% 5% 15%;
+        
+      }
+    
+
+// .btn{
+//       .signUpBtn(1px solid black, 10px);
+
+//      } 
+
+      .btn {
+        .signUpBtn (1% 20% 0 -1%, white, teal, 2rem, 1px solid teal, 1rem, 5% 5% 5% 20%);
+
+        @media @mobile {
+          background-color: rgb(21, 152, 185);
+          border-radius:2.5rem;
+          padding:3% 8%;
+          text-align: center;
+        }
+
+      
+      }
+
+
+      
+
+
+
+
     }
   }
 }// home
+
+
+// margin:1% 20% 0 -1%;
+// color:white;
+// background-color: teal;
+// font-size:2rem;
+// border:1px solid teal;
+// border-radius:1rem;
+// padding:5% 5% 5% 20%;
+
