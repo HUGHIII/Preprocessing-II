@@ -2,6 +2,10 @@
 
 h1 {
     margin-top: 2%;
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .topSec {
@@ -14,11 +18,20 @@ h1 {
 .topNav {
     display: flex;
     justify-content: flex-end;
+    font-size: 1.2;
+
+    @media @mobile{
+   justify-content: center;
+
+    }
     
 
 
     a{
         padding:0 2% 2% 2%;
+        @media @mobile {
+            padding:1% 8% 0 8%;
+        }
     }
 
 
